@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/sign-up-favicon-diana-polekhina.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/cashew-david-gabrielyan.jpg" alt="">
+            <p>Kasan Cashew</p>
+        </div>
+        <div class="main">
+            <div class="form-intro">
+                <p>Kasan Cashew provides you with the best cashew products in the market. 
+                    <span><a href="#firstName"><button>Sign Up</button></a></span> to become a partner of the world's biggest supplier of cashew
+                </p>
+            </div>
+            <div class="form-main">
+                <p>Sign Up Here</p>
+                <form action="" method="get" id="signUp">
+                <fieldset>
+                    <legend>Sign Up Here</legend>
+                    <div class="form-content">
+                        <div class="name-details">
+                            <div>
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name">
+                                <span class="fname"></span>
+                            </div>
+                            <div>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name">
+                                <span class="lname"></span>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                                <span class="email"></span>
+                            </div>
+                            <div>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" name="phone-number" id="phone-number">
+                                <span class="tel"></span>
+                            </div>
+                        </div>
+                        <div class="security">
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" >
+                                <span class="pass"></span>
+                            </div>
+                            <div>
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password">
+                                <span class="passConfirm"></span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
+            </div>
+            <div class="submit">
+                <button type="submit" formaction="" form="signUp">Create Account</button>
+                <p>Already have an account? <a href="#">log in</a></p>
+                <p class="submitMsg"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js" defer></script>
+</html>

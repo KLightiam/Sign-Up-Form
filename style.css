@@ -1,0 +1,195 @@
+/* @font-face {
+    font-family: "norse";
+    src: url(./font/Norse-Bold.otf) format("open type");
+} */
+
+:root{
+    --border-radius:10px;
+    --font-size:larger;
+    --background-color: rgba(164, 163, 163,0.22);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.logo {
+    position: relative;
+    height: 100vh;
+    width: 530px;
+    background-color: grey;
+    background-position: center;
+}
+
+.logo > p {
+    position: absolute;
+    top:30%;
+    font-size: 4rem;
+    background-color: rgba(128, 128, 128,0.3);
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height:15%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo > img{
+    width: 530px;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    flex-grow: 1;
+
+}
+.main > div {
+    padding-left: 50px;
+}
+
+.form-intro{
+    height: 40vh;
+    padding-top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-intro span{
+    display: block;
+}
+
+.form-main{
+    background-color: rgba(255, 255, 255, 0.905);
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.form-main > p {
+    color:rgb(245, 146, 17);
+    text-align: center;
+    animation: infinite flash 500ms;
+    display: none;
+}
+
+div.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+fieldset{
+    border: 0px  solid rgba(222, 184, 135,0.7);
+    padding-bottom: 10px;
+}
+
+legend{
+    color:rgb(245, 146, 17);
+    animation: infinite flash 500ms;
+    margin-left: 240px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+div.form-content > div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 70px;
+}
+
+div.form-content > div > div{
+    display: flex;
+    flex-direction: column;
+    flex:auto;
+}
+
+
+input[type] {
+    height: 35px;
+    width: 260px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input+span{
+    color:red;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+
+
+.submit{
+    margin-top: 20px;
+}
+
+button[type="submit"]{
+    background-color: burlywood;
+    text-align: center;
+    width: 210px;
+    height:45px;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit > p {
+    margin-top: 20px;
+}
+
+.submit a{
+    text-decoration: none;
+}
+
+span button {
+    width: 70px;
+    background-color: rgba(222, 184, 135,0.7);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* pseudo-classes and pseudo-elements */
+input[type]:focus{
+    border:1px solid blue;
+    box-shadow:0px 0px 1.5px blue;
+    outline: none;
+}
+
+input:invalid,.error{
+    border:1px solid red;
+    box-shadow:0px 0px 1.5px red;
+    outline: 1px solid red;
+}
+
+/* check Javascript */
+.valid{
+    border:1px solid green;
+    box-shadow:0px 0px 1.5px green;
+    outline: 1px solid green;
+}
+
+
+
+/* Animation */
+@keyframes flash{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0.6;
+    }
+}
